@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+    background-color: lightblue;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
