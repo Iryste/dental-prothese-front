@@ -18,6 +18,7 @@ Les prothèses sur implant sont souvent utilisées par les personnes qui ont sub
 Pour vous proposer des implants qui correspondent à vos attentes, HARDENT travaille avec les plus grosses compagnies d’implants dentaires, comme Straumann, Dentsply, Nobel, Zimmer Biomet.</p>
                 <img src={image} alt="Description de l'image" className='image-left' />
             </div>
+            <p>point google maps sur noyelles godault et pas directement sur l'adresse</p>
         </div>
     );
 };
