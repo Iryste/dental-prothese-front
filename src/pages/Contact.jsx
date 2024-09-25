@@ -1,10 +1,10 @@
 import React from 'react';
+import Form from '../components/contact/Form';
 
 const Contact = () => {
     return (
         <div>
-            <h1>Contact</h1>
-            <p>page de contact</p>
+            < Form />
         </div>
     );
 };

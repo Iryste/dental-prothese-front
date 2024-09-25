@@ -1,0 +1,52 @@
+// .footer {
+//     background-color: #282c34;
+//     color: white;
+//     text-align: center;
+//     padding: 20px 0;
+//     position: relative;
+//     bottom: 0;
+//     width: 100%;
+// }
+
+// .footer-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .social-links {
+//     margin-top: 10px;
+// }
+
+// .social-links a {
+//     color: white;
+//     margin: 0 10px;
+//     text-decoration: none;
+//     transition: color 0.3s ease;
+// }
+
+// .social-links a:hover {
+//     color: #61dafb;
+// }
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed; /* Pour garder le footer en bas */
+    bottom: 0; /* Collé en bas de l'écran */
+    left: 0; /* Aligné à gauche */
+    z-index: 1000; /* Rester au-dessus des autres éléments */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition pour l'opacité et la transformation */
+    opacity: 0; /* Commence invisible */
+    transform: translateY(100%); /* Déplace le footer en dehors de la vue */
+}
+
+.footer.show {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Remettre à sa position d'origine */
+}
+
+
