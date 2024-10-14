@@ -8,7 +8,13 @@ const Hometext = () => {
             <h2>Delphine Leclerq, Prothèsiste dentaire</h2>
             <p>Fabrication de prothèses dentaire
             dans les Hauts de France</p>
-            <p className='text1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores blanditiis exercitationem sequi aspernatur labore sunt dolores accusantium! Quas, ut ipsam officia nihil aut incidunt. Aperiam, quod obcaecati. Recusandae architecto, inventore, qui corrupti corporis eum atque ipsa voluptatem, debitis dolore dignissimos libero nemo doloremque. Aut itaque minus enim quis, praesentium quae modi! Ad beatae a sapiente, corporis corrupti cum consequatur, saepe sit voluptatibus nobis magnam, qui placeat eaque atque totam.</p>
+            <p className='text1'>Le laboratoire à ouvert en avril 2024, dans le pas de calais à Noyelles Godault. Je fabrique des
+prothèses dentaires en collaboration avec les praticiens de la région.
+J’utilise pour la conjointe et pour les plaques métal la CFAO (Conception et Fabrication Assistée
+par Ordinateur)
+Pourquoi? Meilleure précision, bonne qualité , gain de temps et c’est de la fusion laser.
+Je réceptionne les empreintes numérique MEDIT LINK et 3 SHAPES
+</p>
 
             <div className='image-text-container'>
                 <p className='text-right'>Également appelée prothèse implantaire, une prothèse sur implant est une vis qui est insérée dans l’os qui supporte les dents ou l’os alvéolaire. Elle servira de racine dentaire artificielle pour soutenir correctement une prothèse fixe ou amovible.
