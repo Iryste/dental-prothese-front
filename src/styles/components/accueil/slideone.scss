@@ -1,0 +1,37 @@
+.image-text-container1 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: linear-gradient(to bottom left, lightblue, #f5f5dc);
+}
+
+
+.image1 {
+    max-width: 500px;
+    height: auto;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.text-container1 {
+    font-size: 2rem;
+    margin: 60px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image-text-container1.animate {
+    animation: slideIn 1s ease-in-out;
+}

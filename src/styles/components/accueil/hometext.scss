@@ -1,0 +1,32 @@
+// .hometext-container {
+// margin: 20px;
+// }
+
+// .text1 {
+//     font-size: 1.3rem;
+//     display: flex;
+//     justify-content: center;
+//     margin: 10px;
+// }
+
+.hometext-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    // border-radius: 8px;
+    padding: 20px;
+    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    // padding-bottom: 20px;
+}
+
+.hometitle, .hometitle2 {
+    color: #007bff; 
+}
+
+// .icon {
+//     font-size: 2rem; 
+//     color: #007bff; 
+// }
