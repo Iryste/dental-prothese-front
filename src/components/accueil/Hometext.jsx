@@ -5,7 +5,7 @@ const Hometext = () => {
     return (
         <div>
             <h1>Dental Prothèse</h1>
-            <h2>Delphine Leclerq, Prothèsiste dentaire</h2>
+            <h2>Delphine Leclerq</h2>
             <p>Fabrication de prothèses dentaire
             dans les Hauts de France</p>
             <p className='text1'>Le laboratoire à ouvert en avril 2024, dans le pas de calais à Noyelles Godault. Je fabrique des
