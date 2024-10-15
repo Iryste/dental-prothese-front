@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     max-height: 170px;
-    border-top: 1px solid black;
+    border-top: 1px solid grey;
   
     .footer-content {
       display: flex;
@@ -36,6 +36,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: black;
     }
   
     .footer-copyright {

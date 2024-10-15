@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-// import '../styles/components/nav.scss';
-import logo1 from '../assets/images/logo-nobg.png'
+import { NavLink } from 'react-router-dom';
+import logo1 from '../assets/images/dental-logo-nobg.png'
 
 const Nav = () => {
     return (
@@ -11,13 +10,13 @@ const Nav = () => {
                     <img src={logo1} alt="" className='logo1'/>
                 </li>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <NavLink to="/" exact activeClassName="active">Accueil</NavLink>
                 </li>
                 <li>
-                <Link to="/prestations">Prestations</Link>
+                    <NavLink to="/prestations" activeClassName="active">Prestations</NavLink>
                 </li>
                 <li>
-                <Link to="/contact">Contact</Link>
+                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </li>
             </ul>
         </div>
