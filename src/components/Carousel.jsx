@@ -26,7 +26,7 @@ const Carousel = () => {
             <img src={images[currentIndex]} alt='carousel' className='carousel-image' />
             <div className="carousel-text">
                 <h1>DENTAL PROTHÈSE</h1>
-                <h2>Delphine Leclerq</h2>
+                {/* <h2>Delphine Leclerq</h2> */}
                 <p>Fabrication de prothèses dentaire
             dans les Hauts-de-France</p>
             </div>

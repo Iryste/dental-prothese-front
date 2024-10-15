@@ -16,12 +16,13 @@ li {
 }
 
 .navbar {
-    background-color: lightblue;
+    background: linear-gradient(to top right, white, lightblue, lightblue);
     color: #fff;
     padding: 15px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     top: 0;
     z-index: 10;
+    font-family: 'Nunito', sans-serif;
 }
 
 .logo1 {

@@ -5,11 +5,13 @@
 
     // border-top: 1px solid black;
     border-bottom: 1px solid black;
-    background: linear-gradient(to top right, lightblue,#f5f5dc);
+    // background: linear-gradient(to top right, lightblue,#f5f5dc);
+    background: linear-gradient(to top right, lightblue, white, lightblue, white);
+    font-family: 'Nunito', sans-serif;
 }
 
 .image2 {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     margin: 50px;
     // margin-right: 20px;
@@ -19,6 +21,7 @@
 .text-container2 {
     font-size: 2rem;
     margin: 60px;
+    text-align: center;
 }
 
 @keyframes slideIn2 {

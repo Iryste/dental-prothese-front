@@ -1,32 +1,36 @@
-// .hometext-container {
-// margin: 20px;
-// }
-
-// .text1 {
-//     font-size: 1.3rem;
-//     display: flex;
-//     justify-content: center;
-//     margin: 10px;
-// }
-
 .hometext-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    // border-radius: 8px;
-    padding: 20px;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    background: linear-gradient(to top left, white, lightblue, white);
+    padding: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     // padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
 }
 
-.hometitle, .hometitle2 {
-    color: #007bff; 
+.hometitle {
+    color: #007bff;
+    font-size: 3rem;
 }
 
-// .icon {
-//     font-size: 2rem; 
-//     color: #007bff; 
-// }
+i {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hometext-container.animate {
+    animation: slideInUp 1s ease-in-out;
+}
