@@ -1,11 +1,11 @@
-a {
-    text-decoration: none !important;
-    color: black !important;
-    font-size: 2rem;
-}
-
-li {
-    list-style: none;
+.navbar {
+    background: linear-gradient(to top right, white, lightblue, lightblue);
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 10;
+    font-family: 'Nunito', sans-serif;
 }
 
 .navbar ul {
@@ -15,14 +15,14 @@ li {
     width: 90%;
 }
 
-.navbar {
-    background: linear-gradient(to top right, white, lightblue, lightblue);
-    color: #fff;
-    padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 0;
-    z-index: 10;
-    font-family: 'Nunito', sans-serif;
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
 }
 
 .logo1 {
