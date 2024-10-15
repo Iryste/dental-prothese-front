@@ -1,10 +1,11 @@
 import React from 'react';
+import Fetchcards from '../components/prestations/Fetchcards';
+
 
 const Prestations = () => {
     return (
         <div>
-            <h1>Prestations</h1>
-            <p>Page des prestations</p>
+            <Fetchcards />
         </div>
     );
 };

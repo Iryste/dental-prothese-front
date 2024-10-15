@@ -1,0 +1,64 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  // margin: 20px;
+  padding: 50px;
+  background: linear-gradient(to top left, white, lightblue, white);
+}
+
+.cards-wrapper {
+  display: flex; /* Utilise Flexbox pour aligner les cartes */
+  justify-content: space-between; /* Espace entre les sections */
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.card-section {
+  flex: 1; /* Chaque section prend une part égale de l'espace */
+  margin: 0 10px; /* Marges entre les sections */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Couleur blanche avec 80% d'opacité */
+    border: 1px solid rgba(204, 204, 204, 0.5) !important; /* Bordure grise avec 50% d'opacité */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Optionnel : ajoute un flou d'arrière-plan */
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-family: 'Nunito';
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  font-family: 'Nunito';
+}
+
+.card-title {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  color: blue !important;
+  font-family: 'Nunito' !important;
+  padding: 10px;
+}
+
+
+.card {
+  /* Autres styles de la carte */
+  opacity: 0; /* Commence par être invisible */
+  transform: translateX(50px); /* Décale légèrement à droite */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Ajoute une transition */
+}
+
+.card.visible {
+  opacity: 1; /* Rend visible */
+  transform: translateX(0); /* Remet à la position d'origine */
+}

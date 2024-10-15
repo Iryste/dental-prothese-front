@@ -13,19 +13,19 @@ const Hometext = () => {
             <h1 className='hometitle'>
                 Delphine Leclerc
             </h1>
-            <p>Prothésiste dentaire depuis xxxx.</p>
+            <p className='homedesc'>Prothésiste dentaire depuis xxxx.</p>
             
             <h2 className='hometitle'>
                 <i className="fa fa-building icon"></i> Le laboratoire
             </h2>
-            <p>Dental Prothèse a ouvert ses portes en avril 2024 dans le Pas-de-Calais, à Noyelles-Godault.</p>
+            <p className='homedesc'>Dental Prothèse a ouvert ses portes en avril 2024 dans le Pas-de-Calais, à Noyelles-Godault.</p>
             <h3 className='hometitle'>
                 <i className="fa fa-cogs icon"></i> Les technologies
             </h3>
-            <p>
+            <p className='homedesc'>
                 J'utilise la CFAO pour une meilleure précision, une meilleure qualité et un gain de temps important.
             </p>
-            <p>
+            <p className='homedesc'>
                 Je réceptionne également les empreintes numériques MEDIT LINK et 3SHAPE.
             </p>
         </div>
