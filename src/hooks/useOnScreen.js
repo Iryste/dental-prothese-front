@@ -8,7 +8,7 @@ const useOnScreen = (options) => {
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
                 setIsVisible(true);
-                observer.disconnect(); // Déconnecter après que l'élément soit visible
+                observer.disconnect();
             }
         }, options);
 
