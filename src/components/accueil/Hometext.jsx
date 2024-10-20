@@ -11,9 +11,9 @@ const Hometext = () => {
         className={`hometext-container ${isVisible ? 'animate' : ''}`}
         >
             <h1 className='hometitle'>
-                Delphine Leclerc
+                Delphine Leclercq
             </h1>
-            <p className='homedesc'>Prothésiste dentaire depuis xxxx.</p>
+            <p className='homedesc'>Prothésiste dentaire depuis 2001.</p>
             
             <h2 className='hometitle'>
                 <i className="fa fa-building icon"></i> Le laboratoire

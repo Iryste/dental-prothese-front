@@ -6,13 +6,13 @@
     top: 0;
     z-index: 10;
     font-family: 'Nunito', sans-serif;
-    max-height: 140px;
+    // max-height: 140px;
 }
 
-.navbar ul {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
 }
 
@@ -33,7 +33,74 @@ li {
 }
 
 .active {
-    font-weight: bold; /* Rendre le texte en gras */
-    color: blue; /* Une couleur différente pour l'élément actif */
-    text-decoration: underline; /* Souligner le texte actif */
+    font-weight: bold; 
+    color: blue;
+}
+
+.navbar ul {
+    display: flex; /* Afficher les liens par défaut */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transition pour une animation fluide */
+}
+
+.navbar ul.active {
+    max-height: 300px; /* Hauteur maximum lorsque le menu est ouvert (ajustez si nécessaire) */
+    opacity: 1; /* Opacité lorsque le menu est visible */
+}
+
+.hamburger {
+    display: none; /* Masquer par défaut sur les grands écrans */
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent; /* Rendre le fond transparent */
+    border: none; /* Pas de bordure */
+    padding: 10px; /* Ajouter un padding pour l'espace autour du bouton */
+}
+
+.bar {
+    height: 6px; /* Augmenter la hauteur des barres */
+    width: 45px; /* Augmenter la largeur des barres */
+    background-color: #007bff; /* Couleur de la barre */
+    margin: 4px 0; /* Espace entre les barres */
+    border-radius: 10px; /* Arrondir les extrémités des barres */
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+.bar:hover {
+    background-color: blue;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        justify-content: space-between !important;
+        position: absolute;
+        top: 156px;
+        right: 0;
+        width: 50%;
+        background: lightblue;
+        opacity: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+        transition: 0.3s ease;
+    }
+
+    a {
+        font-size: 1.6rem;
+    }
+
+    .navbar ul.collapsed {
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }

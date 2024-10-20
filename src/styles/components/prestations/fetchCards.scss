@@ -1,31 +1,30 @@
 .card-container {
   display: flex;
   justify-content: center;
-  // margin: 20px;
   padding: 50px;
   background: linear-gradient(to top left, white, lightblue, white);
 }
 
 .cards-wrapper {
-  display: flex; /* Utilise Flexbox pour aligner les cartes */
-  justify-content: space-between; /* Espace entre les sections */
-  width: 100%; /* Prend toute la largeur disponible */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card-section {
-  flex: 1; /* Chaque section prend une part égale de l'espace */
-  margin: 0 10px; /* Marges entre les sections */
+  flex: 1;
+  margin: 0 10px;
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.2) !important; /* Couleur blanche avec 80% d'opacité */
-    border: 1px solid rgba(204, 204, 204, 0.5) !important; /* Bordure grise avec 50% d'opacité */
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(204, 204, 204, 0.5) !important;
     border-radius: 8px;
     padding: 20px;
     margin: 10px 0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    backdrop-filter: blur(10px); /* Optionnel : ajoute un flou d'arrière-plan */
+    backdrop-filter: blur(10px);
 }
 
 .card h3 {
@@ -48,17 +47,148 @@
   color: blue !important;
   font-family: 'Nunito' !important;
   padding: 10px;
+  background: transparent;
+  opacity: 70%;
+  border-radius: 50px;
+  border: 1px solid lightblue;
 }
 
 
 .card {
-  /* Autres styles de la carte */
-  opacity: 0; /* Commence par être invisible */
-  transform: translateX(50px); /* Décale légèrement à droite */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Ajoute une transition */
+  
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .card.visible {
-  opacity: 1; /* Rend visible */
-  transform: translateX(0); /* Remet à la position d'origine */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Petits écrans (max-width: 479px) */
+@media (max-width: 479px) {
+  .card-container {
+    padding: 20px;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-section {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+    margin: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Appareils moyens (min-width: 480px) and (max-width: 767px) */
+@media (min-width: 480px) and (max-width: 855px) {
+  .card-container {
+    padding: 30px;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-section {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablettes (min-width: 768px) */
+@media (min-width: 856px) {
+  .cards-wrapper {
+    flex-direction: row;
+  }
+
+  .card-section {
+    margin: 0 15px;
+  }
+
+  .card {
+    padding: 25px;
+    margin: 15px 0;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Grands écrans (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .card-container {
+    padding: 60px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 2.4rem;
+  }
 }

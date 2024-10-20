@@ -26,23 +26,6 @@ import Carousel from '../components/Carousel';
 import Footer from '../components/Footer';
 
 const Layout = () => {
-    // const [showFooter, setShowFooter] = useState(false);
-
-    // const handleScroll = () => {
-    //     if (window.scrollY > 50) {
-    //         setShowFooter(true);
-    //     } else {
-    //         setShowFooter(false);
-    //     }
-    // };
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
     return (
         <div className="app-wrapper">
             <Nav />
