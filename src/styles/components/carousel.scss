@@ -39,59 +39,59 @@
 /* Smartphones (max-width: 479px) */
 @media (max-width: 479px) {
     .carousel-image {
-        height: 30vh; /* Réduire la hauteur pour les petits écrans */
+        height: 30vh;
     }
 
     .carousel-text h1 {
-        font-size: 2.5rem; /* Réduire la taille du texte */
+        font-size: 2.5rem; 
     }
 
     .carousel-text p {
-        font-size: 1.2rem; /* Réduire la taille du texte */
+        font-size: 1.2rem; 
     }
 }
 
 /* Tablettes (min-width: 480px) and (max-width: 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
     .carousel-image {
-        height: 40vh; /* Ajuster la hauteur pour les tablettes */
+        height: 40vh; 
     }
 
     .carousel-text h1 {
-        font-size: 3rem; /* Ajuster la taille du texte */
+        font-size: 3rem; 
     }
 
     .carousel-text p {
-        font-size: 1.5rem; /* Ajuster la taille du texte */
+        font-size: 1.5rem;
     }
 }
 
 /* Tablettes et petits écrans (min-width: 768px) */
 @media (min-width: 768px) {
     .carousel-image {
-        height: 50vh; /* Hauteur par défaut */
+        height: 50vh; 
     }
 
     .carousel-text h1 {
-        font-size: 4rem; /* Taille par défaut */
+        font-size: 4rem; 
     }
 
     .carousel-text p {
-        font-size: 2rem; /* Taille par défaut */
+        font-size: 2rem; 
     }
 }
 
 /* Grands écrans (min-width: 1200px) */
 @media (min-width: 1200px) {
     .carousel-image {
-        height: 60vh; /* Augmenter la hauteur pour les grands écrans */
+        height: 60vh; 
     }
 
     .carousel-text h1 {
-        font-size: 5rem; /* Augmenter la taille du texte */
+        font-size: 5rem; 
     }
 
     .carousel-text p {
-        font-size: 2.5rem; /* Augmenter la taille du texte */
+        font-size: 2.5rem; 
     }
 }
