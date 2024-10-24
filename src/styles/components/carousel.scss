@@ -1,18 +1,52 @@
+// .carousel {
+//     position: relative;
+//     width: 100%;
+//     margin: auto;
+//     text-align: center;
+//     overflow: hidden;
+// }
+
+// .carousel {
+//     position: relative;
+//     width: 100%; /* Ajustez la largeur selon vos besoins */
+//     overflow: hidden; /* Pour cacher les images qui débordent */
+//     margin: auto;
+//     text-align: center;
+// }
+
+// .carousel-image {
+//     width: 100%; /* Ajustez la taille selon vos besoins */
+//     position: absolute; /* Pour superposer les images */
+//     top: 0;
+//     left: 0;
+//     opacity: 0; /* Commence à être invisible */
+//     transition: opacity 0.5s ease-in-out; /* Transition pour une fluidité */
+// }
+
+// .carousel-image.active {
+//     opacity: 1; /* Rendre l'image visible */
+// }
+
+// .carousel-image {
+//     object-fit: cover;
+//     height: 50vh;
+//     width: 100vw;
+//     transition: ease 1s linear;
+// }
+
 .carousel {
     position: relative;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
+    width: 100%; /* Largeur du carousel */
+    height: 600px; /* Hauteur fixe pour uniformiser les images */
+    overflow: hidden; /* Cacher les parties des images qui débordent */
 }
 
-.carousel-image {
-    object-fit: cover;
-    height: 50vh;
-    width: 100vw;
-    transition: ease 1s linear;
+.carousel img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    height: 100%; /* Hauteur de l'image à 100% du conteneur */
+    object-fit: cover; /* Couvre le conteneur sans déformer l'image */
+    // object-position: center; /* Centre l'image dans le conteneur */
 }
-
 
 .carousel-text {
     position: absolute;
@@ -22,6 +56,7 @@
     color: white;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .carousel-text h1 {
@@ -34,31 +69,120 @@
     font-size: 2rem;
 }
 
-/* Responsive Breakpoints */
 
-/* Smartphones (max-width: 479px) */
+// @media (max-width: 479px) {
+//     .carousel-image {
+//         height: 30vh;
+//     }
+
+//     .carousel-text h1 {
+//         font-size: 2.5rem; 
+//     }
+
+//     .carousel-text p {
+//         font-size: 1.2rem; 
+//     }
+// }
+
+// /* Tablettes (min-width: 480px) and (max-width: 767px) */
+// @media (min-width: 480px) and (max-width: 767px) {
+//     .carousel-image {
+//         height: 40vh; 
+//     }
+
+//     .carousel-text h1 {
+//         font-size: 3rem; 
+//     }
+
+//     .carousel-text p {
+//         font-size: 1.5rem;
+//     }
+// }
+
+// /* Tablettes et petits écrans (min-width: 768px) */
+// @media (min-width: 768px) {
+//     .carousel-image {
+//         height: 50vh; 
+//     }
+
+//     .carousel-text h1 {
+//         font-size: 4rem; 
+//     }
+
+//     .carousel-text p {
+//         font-size: 2rem; 
+//     }
+// }
+
+// /* Grands écrans (min-width: 1200px) */
+// @media (min-width: 1200px) {
+//     .carousel-image {
+//         height: 60vh; 
+//     }
+
+//     .carousel-text h1 {
+//         font-size: 5rem; 
+//     }
+
+//     .carousel-text p {
+//         font-size: 2.5rem; 
+//     }
+// }
+
+/* Petits écrans (smartphones) */
+
+
 @media (max-width: 479px) {
-    .carousel-image {
-        height: 30vh;
+    .carousel {
+        height: 200px;
     }
 
     .carousel-text h1 {
-        font-size: 2.5rem; 
+        font-size: 1.8rem;
     }
 
     .carousel-text p {
-        font-size: 1.2rem; 
+        font-size: 1rem;
     }
 }
 
-/* Tablettes (min-width: 480px) and (max-width: 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
-    .carousel-image {
-        height: 40vh; 
+/* Smartphones (petits appareils) */
+@media (max-width: 420px) {
+    .carousel {
+        height: 150px ;
     }
 
     .carousel-text h1 {
-        font-size: 3rem; 
+        font-size: 1.4rem;
+    }
+
+    .carousel-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .carousel-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablettes et petits ordinateurs */
+@media (min-width: 920px) {
+    .carousel {
+        height: 400px;
+    }
+
+    .carousel-text h1 {
+        font-size: 3rem;
     }
 
     .carousel-text p {
@@ -66,32 +190,17 @@
     }
 }
 
-/* Tablettes et petits écrans (min-width: 768px) */
-@media (min-width: 768px) {
-    .carousel-image {
-        height: 50vh; 
-    }
-
-    .carousel-text h1 {
-        font-size: 4rem; 
-    }
-
-    .carousel-text p {
-        font-size: 2rem; 
-    }
-}
-
-/* Grands écrans (min-width: 1200px) */
+/* Grands écrans (ordinateurs de bureau) */
 @media (min-width: 1200px) {
-    .carousel-image {
-        height: 60vh; 
+    .carousel {
+        height: 550px;
     }
 
     .carousel-text h1 {
-        font-size: 5rem; 
+        font-size: 4rem;
     }
 
     .carousel-text p {
-        font-size: 2.5rem; 
+        font-size: 2rem;
     }
 }
